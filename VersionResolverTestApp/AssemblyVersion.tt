@@ -1,0 +1,16 @@
+﻿<#@ template debug="false" hostspecific="true" language="C#" #>
+<#@ assembly name="VersionResolver.dll" #>
+<#@ assembly name="System.Core" #>
+<#@ import namespace="System.Linq" #>
+<#@ import namespace="System.Text" #>
+<#@ import namespace="System.Collections.Generic" #>
+<#@ import namespace="VersionResolver" #>
+<#@ output extension=".cs" #>
+<#
+	VersionResolver.LoadFiles(Host.ResolvePath(@"..\TestData\versions.xml"), Host.ResolvePath(@"..\TestData\revisions.xml"));
+#>
+using System.Reflection;
+
+[assembly: AssemblyVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Release", "Revision")#>")]
+[assembly: AssemblyFileVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Release", "Revision")#>")]
+[assembly: AssemblyInformationalVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Release", "RevisionDetailed")#>")]
