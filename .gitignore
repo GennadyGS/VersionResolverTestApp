@@ -1,6 +1,7 @@
 /TestResults/
 bin/
 obj/
+AssemblyVersion.cs
 *.suo
 *.user
 Build.log.*
