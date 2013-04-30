@@ -7,7 +7,7 @@
 <#@ import namespace="VersionResolver" #>
 <#@ output extension=".cs" #>
 <#
-	VersionResolver.LoadFiles(Host.ResolvePath(@"..\TestData\versions.xml"), Host.ResolvePath(@"..\TestData\revisions.xml"));
+	VersionResolver.LoadFiles(Host.ResolvePath(@"..\versions.xml"), Host.ResolvePath(@"..\revisions.xml"));
 #>
 using System.Reflection;
 
