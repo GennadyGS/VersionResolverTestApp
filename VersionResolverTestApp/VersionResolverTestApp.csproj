@@ -77,7 +77,7 @@
     <TransformOnBuild>true</TransformOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <T4ReferencePath Include="$(ProjectDir)\..\References\" />
+    <T4ReferencePath Include="$(SolutionDir)\packages\VersionResolver.1.0.0\tools\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" Condition="'$(VSToolsPath)' != ''" />
