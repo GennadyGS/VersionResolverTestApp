@@ -1,6 +1,7 @@
 /TestResults/
 bin/
 obj/
+/packages/*
 AssemblyVersion.cs
 *.suo
 *.user
