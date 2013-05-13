@@ -5,4 +5,4 @@ obj/
 AssemblyVersion.cs
 *.suo
 *.user
-Build.log.*
+Build*.log.*
