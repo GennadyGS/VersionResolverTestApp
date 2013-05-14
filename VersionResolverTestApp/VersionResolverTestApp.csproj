@@ -80,8 +80,7 @@
     <TransformOnBuild>true</TransformOnBuild>
   </PropertyGroup>
   <ItemGroup>
-    <VersionResolverPackage Include="$(SolutionDir)\packages\VersionResolver.*\*.nupkg" />
-    <T4ReferencePath Include="@(VersionResolverPackage -> '%(RootDir)%(Directory)tools\')" />
+    <T4ReferencePath Include="$(SolutionDir)\packages\VersionResolver.1.0.1\tools" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(VSToolsPath)\TextTemplating\Microsoft.TextTemplating.targets" Condition="'$(VSToolsPath)' != ''" />
