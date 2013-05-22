@@ -2,7 +2,7 @@
 bin/
 obj/
 /packages/*
-revisions.xml
+/revisions.xml
 AssemblyVersion.cs
 *.suo
 *.user
