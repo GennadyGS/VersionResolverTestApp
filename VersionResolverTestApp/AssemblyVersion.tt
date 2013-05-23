@@ -11,6 +11,6 @@
 #>
 using System.Reflection;
 
-[assembly: AssemblyVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Release", "Revision")#>")]
-[assembly: AssemblyFileVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Release", "Revision")#>")]
-[assembly: AssemblyInformationalVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Release", "RevisionDetailed")#>")]
+[assembly: AssemblyVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Build", "Revision")#>")]
+[assembly: AssemblyFileVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Build", "Revision")#>")]
+[assembly: AssemblyInformationalVersion("<#=VersionResolver.BuildAssemblyVersion("MajorVersion", "MinorVersion", "Build", "RevisionDetailed")#>")]
